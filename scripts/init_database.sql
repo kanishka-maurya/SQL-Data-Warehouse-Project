@@ -15,18 +15,19 @@ WARNING:
 
 -- Drop and Reacreate the "DataWarehouse" Database
 drop database if exists DataWarehouse;
-go
 
 -- Create the "DataWarehuose" Database
-create database DataWarehouse;
-go 
+create database DataWarehouse; 
 use DataWarehouse;
-go 
+ 
 
--- Create Schemas
-create schema bronze;
-go 
-create schema silver;
-go 
-create schema gold;
+-- Create Bronze, Silver and Gold Layers
+drop database if exists bronze;
+create database bronze; 
+
+drop database if exists silver;
+create database silver; 
+
+drop database if exists gold;
+create database gold; 
 
