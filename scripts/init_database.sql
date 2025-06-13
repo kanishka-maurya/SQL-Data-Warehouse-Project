@@ -13,21 +13,30 @@ WARNING:
     and ensure you have proper backups before running this script.
 */
 
--- Drop and Reacreate the "DataWarehouse" Database
-drop database if exists DataWarehouse;
+use master;
+go
 
--- Create the "DataWarehuose" Database
-create database DataWarehouse; 
+-- Drop and recreate the 'DataWarehouse' database
+if exists (select 1 from sys.databases where name = 'DataWarehouse')
+begin
+    alter database DataWarehouse set single_user with rollback immediate;
+    drop database DataWarehouse;
+end;
+go
+
+-- Create the 'DataWarehouse' database
+create database DataWarehouse;
+go
+
 use DataWarehouse;
- 
+go
 
--- Create Bronze, Silver and Gold Layers
-drop database if exists bronze;
-create database bronze; 
+-- Create Schemas
+create schema bronze;
+go
 
-drop database if exists silver;
-create database silver; 
+create schema silver;
+go
 
-drop database if exists gold;
-create database gold; 
-
+create schema gold;
+go
