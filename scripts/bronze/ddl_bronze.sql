@@ -1,10 +1,10 @@
 /* 
-===========================================================
+====================================================================================
 Defining Tables within "bronze" Database using DDL.
 
 Schema of a table must match the data definition of the source data to retain data 
 without loss, truncation, or type mismatches during loading or migration processes.
-===========================================================
+====================================================================================
 */
 
 use bronze;
