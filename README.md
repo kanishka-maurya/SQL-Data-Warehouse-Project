@@ -37,7 +37,7 @@ This project implements a **modern Data Warehouse** on **SQL Server**, leveragin
   - Dimensions: `dim_<entity>` (e.g., `dim_customers`)
   - Facts: `fact_<entity>` (e.g., `fact_sales`)
 
-![Medallion Architecture](images/data_architecture.png)
+![Medallion Architecture](docs/data_architecture.png)
  
 ---
 
