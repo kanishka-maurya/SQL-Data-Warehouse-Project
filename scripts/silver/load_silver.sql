@@ -85,7 +85,7 @@ begin
 
             print '--------------------------------------------'
             print '>>>> Truncating Table: silver.crm_prd_info';
-            truncate table silver.crm_cust_info
+            truncate table silver.crm_prd_info
             print '>>>> Inserting Data Into: silver.crm_prd_info';
             set @start_time = getdate()
             insert into silver.crm_prd_info(
@@ -121,7 +121,7 @@ begin
 
             print '--------------------------------------------'
             print '>>>> Truncating Table: silver.crm_sales_details';
-            truncate table silver.crm_cust_info
+            truncate table silver.crm_sales_details
             print '>> Inserting Data Into: silver.crm_sales_details';
             set @start_time = getdate()
             insert into silver.crm_sales_details(
@@ -169,10 +169,11 @@ begin
 
             print '--------------------------------------------'
             print '>>>> Truncating Table: silver.erp_cust_az12';
-            truncate table silver.crm_cust_info
+            truncate table silver.erp_cust_az12
             print '>>>> Inserting Data Into: silver.erp_cust_az12';
             set @start_time = getdate()
-            insert into silver.erp_cust_az12 (cid, bdate, gen)
+            insert into silver.erp_cust_az12 
+            (cid, bdate, gen)
             select 
             case 
                 when cid like 'NAS%' then substring(cid, 4,len(cid))
@@ -195,7 +196,7 @@ begin
 
             print '--------------------------------------------'
             print '>>>> Truncating Table: silver.erp_loc_a101';
-            truncate table silver.crm_cust_info
+            truncate table silver.erp_loc_a101
             print '>>>> Inserting Data Into: silver.erp_loc_a101';
             set @start_time = getdate()
             insert into silver.erp_loc_a101
@@ -216,7 +217,7 @@ begin
 
             print '--------------------------------------------'
             print '>>>> Truncating Table: silver.erp_px_cat_g1v2';
-            truncate table silver.crm_cust_info
+            truncate table silver.erp_px_cat_g1v2
             print '>>>> Inserting Data Into: silver.erp_px_cat_g1v2';
             set @start_time = getdate()
             insert into silver.erp_px_cat_g1v2
