@@ -1,3 +1,32 @@
+/*
+===================================================================
+ETL STEP: Bronze ➝ Silver Layer - Data Cleansing & Transformation
+===================================================================
+
+DESCRIPTION:
+------------
+This ETL script performs the cleansing and transformation of raw data ingested into the Bronze layer and loads the refined output 
+into the Silver layer tables. This step ensures the data is reliable, standardized, and ready for analytical and reporting purposes.
+
+KEY TRANSFORMATION OPERATIONS:
+------------------------------
+1. **Null & Invalid Value Handling**
+2. **Data Enrichment**
+3. **Data Standardization**
+4. **Derived Columns**
+5. **Format Handling & Conversion**
+6. **Data Auditing & Logging**
+  
+OBJECTIVES:
+-----------
+- Improve data quality and trustworthiness.
+- Enable reliable downstream processing in the Gold layer.
+- Maintain traceability and auditability across ETL stages.
+- Establish best practices in scalable data engineering pipelines.
+*/
+
+
+
 create or alter procedure silver.load_silver as
 begin
     declare @start_time datetime, @end_time datetime, @batch_start datetime, @batch_end datetime
