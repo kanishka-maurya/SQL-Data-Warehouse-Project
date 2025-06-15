@@ -23,6 +23,9 @@ Key Points:
 -- ==========================
 -- BASE TABLE PREPARATION
 -- ==========================
+if object_id('gold.report_customers', 'v') is not null
+    drop view gold.report_customers;
+go
 create view gold.report_customers as 
 with base_query as(
 select 
