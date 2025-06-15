@@ -58,7 +58,10 @@ begin
             )
             select 
             cst_id,
-            cst_key,
+            case 
+		when cst_key not like 'AW000%' then 'n/a'
+		else cst_key
+	    end cst_key,
             trim(cst_firstname) as cst_firstname,
             trim(cst_lastname) as cst_lastname,
             case
