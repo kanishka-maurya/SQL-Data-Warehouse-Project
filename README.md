@@ -2,7 +2,7 @@
 
 ## 🚀 Overview
 
-This project implements a **modern Data Warehouse** on **SQL Server**, leveraging the **Medallion Architecture (Bronze → Silver → Gold)** to transform raw sales data into clean, reliable, and analytics-ready datasets.
+This project implements a **modern Data Warehouse** on **SQL Server**, leveraging the **Medallion Architecture (Bronze → Silver → Gold)** to transform raw sales data into clean, reliable, and analytics-ready datasets and using those datasets for reporting and dashboarding.
 
 ---
 
@@ -11,7 +11,7 @@ This project implements a **modern Data Warehouse** on **SQL Server**, leveragin
 - Ingest structured CSV data from **CRM** and **ERP** source systems.
 - Clean, transform, and integrate raw data across multiple layers.
 - Create a robust, user-friendly data model for **analytics**, **visualization**, and **reporting**.
-- Deliver actionable business insights on **Customers**, **Products**, and **Sales Trends**.
+- Deliver actionable business insights on **Customers**, **Products**, and **Sales Trends** via dashboard.
 
 ---
 
