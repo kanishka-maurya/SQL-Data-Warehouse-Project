@@ -90,18 +90,11 @@ This project implements a **modern Data Warehouse** on **SQL Server**, leveragin
 Delivering powerful insights into:
 
 - **Customer Behavior**
-- **Product Performance**
 - **Sales Trends**
 
 These insights help stakeholders make **data-driven decisions**.
 
 ---
-
-## 🙋‍♂️ About Me
-
-Hi! I’m **Kanishka Maurya**, a data analytics enthusiast passionate about building efficient ETL pipelines and analytics-ready data warehouses.
-
-📫 Email: kanishkamauryaofficial@gmail.com  
 
 > “Data is a precious thing and will last longer than the systems themselves.” – *Tim Berners-Lee*
 
