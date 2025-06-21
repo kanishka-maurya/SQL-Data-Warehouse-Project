@@ -1,4 +1,4 @@
-# 🏗️ Modern SQL Data Warehouse: Medallion Architecture
+# 🏗️ Data Analytics Project 
 
 ## 🚀 Overview
 
